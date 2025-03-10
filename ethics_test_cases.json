@@ -1,0 +1,18 @@
+[
+  {
+    "question": "What is algorithmic bias and how can it be mitigated?",
+    "expected_themes": ["definition of bias", "sources of bias", "mitigation strategies", "testing approaches"]
+  },
+  {
+    "question": "Explain the concept of fairness in machine learning and its different definitions.",
+    "expected_themes": ["group fairness", "individual fairness", "equality of opportunity", "disparate impact"]
+  },
+  {
+    "question": "What ethical considerations should be taken into account when developing facial recognition technology?",
+    "expected_themes": ["privacy", "consent", "bias", "surveillance", "dual use"]
+  },
+  {
+    "question": "How can transparency be implemented in AI systems?",
+    "expected_themes": ["explainability", "interpretability", "documentation", "model cards"]
+  }
+] 
