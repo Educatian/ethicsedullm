@@ -1,6 +1,6 @@
 # AI Ethics Education LLM
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Educatian/ethicsedullm/blob/main/AI_Ethics_LLM_Training_Colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Educatian/ethicsedullm/blob/claude/check-the-p-011CUb2jgGmuME6ZSidadx1s/AI_Ethics_LLM_Training_Colab.ipynb)
 
 A specialized language model fine-tuned for AI ethics education, covering major international frameworks including the EU AI Act, OECD AI Principles, Partnership on AI, and UNESCO Ethical Guidelines.
 
@@ -29,7 +29,7 @@ This project creates an educational AI assistant that helps students, profession
 
 **🎯 Easiest way to get started - No local GPU needed!**
 
-1. Click: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Educatian/ethicsedullm/blob/main/AI_Ethics_LLM_Training_Colab.ipynb)
+1. Click: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Educatian/ethicsedullm/blob/claude/check-the-p-011CUb2jgGmuME6ZSidadx1s/AI_Ethics_LLM_Training_Colab.ipynb)
 2. Select **Runtime → Change runtime type → GPU (T4)**
 3. Run cells from top to bottom
 4. Enter your Hugging Face token when prompted
