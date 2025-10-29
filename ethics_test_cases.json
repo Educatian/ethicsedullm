@@ -1,18 +1,42 @@
 [
   {
     "question": "What is algorithmic bias and how can it be mitigated?",
-    "expected_themes": ["definition of bias", "sources of bias", "mitigation strategies", "testing approaches"]
+    "expected_themes": ["definition of bias", "sources of bias", "training data", "mitigation strategies", "testing", "monitoring", "diverse teams"]
   },
   {
     "question": "Explain the concept of fairness in machine learning and its different definitions.",
-    "expected_themes": ["group fairness", "individual fairness", "equality of opportunity", "disparate impact"]
+    "expected_themes": ["group fairness", "individual fairness", "demographic parity", "equalized odds", "equal opportunity", "trade-offs", "context-dependent"]
   },
   {
     "question": "What ethical considerations should be taken into account when developing facial recognition technology?",
-    "expected_themes": ["privacy", "consent", "bias", "surveillance", "dual use"]
+    "expected_themes": ["privacy", "consent", "bias", "surveillance", "accuracy disparities", "regulation", "human rights"]
   },
   {
     "question": "How can transparency be implemented in AI systems?",
-    "expected_themes": ["explainability", "interpretability", "documentation", "model cards"]
+    "expected_themes": ["explainability", "interpretability", "documentation", "model cards", "stakeholder communication", "limitations"]
+  },
+  {
+    "question": "What are the key principles of the EU AI Act?",
+    "expected_themes": ["risk categories", "high-risk systems", "transparency", "human oversight", "conformity assessment", "prohibited practices"]
+  },
+  {
+    "question": "How do the OECD AI Principles address accountability?",
+    "expected_themes": ["responsibility", "governance", "traceability", "redress mechanisms", "documentation", "stakeholder engagement"]
+  },
+  {
+    "question": "What is differential privacy and why is it important for AI ethics?",
+    "expected_themes": ["privacy protection", "mathematical guarantee", "noise addition", "trade-offs", "sensitive data", "individual records"]
+  },
+  {
+    "question": "What ethical concerns arise with AI in healthcare?",
+    "expected_themes": ["patient safety", "bias", "equity", "privacy", "transparency", "autonomy", "liability", "clinical validation"]
+  },
+  {
+    "question": "How can organizations implement ethical AI governance?",
+    "expected_themes": ["ethics committees", "policies", "review processes", "training", "monitoring", "stakeholder engagement", "accountability", "documentation"]
+  },
+  {
+    "question": "What is the environmental impact of AI and how do ethical frameworks address it?",
+    "expected_themes": ["carbon footprint", "energy consumption", "sustainability", "green AI", "UNESCO", "climate justice", "efficiency"]
   }
 ] 

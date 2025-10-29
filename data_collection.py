@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import json
+from ethical_guidelines_data import ETHICAL_GUIDELINES_DATASET
 
 def collect_ai_ethics_papers(sources):
     """
@@ -104,16 +105,32 @@ def generate_sample_data():
 
 def prepare_training_data(data, output_file="ai_ethics_dataset.jsonl"):
     """
-    Convert collected data into training format
+    Convert collected data into training format, combining scraped and curated ethical guidelines
     """
     with open(output_file, 'w') as f:
+        # First, write the comprehensive ethical guidelines dataset
+        for item in ETHICAL_GUIDELINES_DATASET:
+            entry = {
+                "instruction": item['question'],
+                "response": item['answer'],
+                "source": item.get('source', ''),
+                "category": item.get('category', '')
+            }
+            f.write(json.dumps(entry) + '\n')
+
+        # Then add any scraped data
         for _, row in data.iterrows():
             # Format as instruction-response pairs
             entry = {
                 "instruction": row['question'],
-                "response": row['explanation']
+                "response": row['explanation'],
+                "source": "scraped",
+                "category": "scraped"
             }
             f.write(json.dumps(entry) + '\n')
+
+    total_count = len(ETHICAL_GUIDELINES_DATASET) + len(data)
+    print(f"Training data prepared: {total_count} examples ({len(ETHICAL_GUIDELINES_DATASET)} curated + {len(data)} scraped)")
 
 # Example sources
 sources = [
@@ -122,5 +139,11 @@ sources = [
     "https://www.partnershiponai.org/resources/"
 ]
 
-data = collect_ai_ethics_papers(sources)
-prepare_training_data(data) 
+if __name__ == "__main__":
+    print("Collecting AI ethics training data...")
+    print(f"Using comprehensive ethical guidelines dataset: {len(ETHICAL_GUIDELINES_DATASET)} curated examples")
+
+    data = collect_ai_ethics_papers(sources)
+    prepare_training_data(data)
+
+    print("\nData collection complete! Dataset saved to ai_ethics_dataset.jsonl") 

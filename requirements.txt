@@ -1,0 +1,22 @@
+# AI Ethics Education LLM - Requirements
+
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.40.0
+datasets>=2.18.0
+accelerate>=0.26.0
+
+# Efficient training
+peft>=0.10.0  # Parameter-Efficient Fine-Tuning (LoRA, QLoRA)
+bitsandbytes>=0.43.0  # 4-bit/8-bit quantization
+
+# Web interface
+gradio>=4.0.0
+
+# Data collection
+pandas>=2.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Utilities
+tqdm>=4.65.0
