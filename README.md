@@ -1,6 +1,10 @@
 # AI Ethics Education LLM
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Educatian/ethicsedullm/blob/main/AI_Ethics_LLM_Training_Colab.ipynb)
+
 A specialized language model fine-tuned for AI ethics education, covering major international frameworks including the EU AI Act, OECD AI Principles, Partnership on AI, and UNESCO Ethical Guidelines.
+
+**🚀 Quick Start:** Click the Colab badge above to train in Google Colab (free GPU available!) • [Colab Guide](COLAB_GUIDE.md)
 
 ## Project Overview
 
@@ -21,7 +25,19 @@ This project creates an educational AI assistant that helps students, profession
 - **Partnership on AI**: Multi-stakeholder collaboration, responsible development
 - **UNESCO Ethical Guidelines**: Human rights, environmental considerations, sustainability
 
-## Installation
+## Google Colab (Recommended)
+
+**🎯 Easiest way to get started - No local GPU needed!**
+
+1. Click: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Educatian/ethicsedullm/blob/main/AI_Ethics_LLM_Training_Colab.ipynb)
+2. Select **Runtime → Change runtime type → GPU (T4)**
+3. Run cells from top to bottom
+4. Enter your Hugging Face token when prompted
+5. Wait 2-3 hours for training to complete
+
+**Free T4 GPU is sufficient!** See [COLAB_GUIDE.md](COLAB_GUIDE.md) for detailed instructions.
+
+## Local Installation
 
 ### Prerequisites
 - Python 3.8+
